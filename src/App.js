@@ -120,7 +120,7 @@ function App(props) {
 
   async function addTask(name) {
     try {
-      let body = {name:name,completed:true};
+      let body = {name:name,completed:false};
       let response = await fetch(`http://localhost:8000/tasks`,
       {
         method:'POST',
